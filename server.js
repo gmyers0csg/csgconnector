@@ -18,11 +18,12 @@ mongoose.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: 
 
 // Geolocation Schema and Model
 const geolocationSchema = new mongoose.Schema({
-  sourceID: Text,
+  sourceID: "Text",
   latitude: Number,
   longitude: Number,
   altitude: Number,
-  timestamp: { type: Date, default: Date.now },
+  timestamp: "Text",
+  //timestamp: { type: Date, default: Date.now },
 });
 
 const Geolocation = mongoose.model("Geolocation", geolocationSchema);
